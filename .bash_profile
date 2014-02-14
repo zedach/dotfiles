@@ -1,4 +1,4 @@
-# Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
+# Add `~/bin` to the `$PATH`
 PATH=$HOME/bin:$PATH
 export PATH
 export JAVA_HOME=`/usr/libexec/java_home -v1.7`
@@ -7,7 +7,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v1.7`
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-  [ -r "$file" ] && source "$file"
+  [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
 
