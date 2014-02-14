@@ -1,5 +1,4 @@
 # Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
-PATH=/usr/local/bin:$PATH
 PATH=$HOME/bin:$PATH
 export PATH
 export JAVA_HOME=`/usr/libexec/java_home -v1.7`
