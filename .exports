@@ -1,1 +1,4 @@
-xport JAVA_HOME=`/usr/libexec/java_home -v1.7`
+export JAVA_HOME=`/usr/libexec/java_home -v1.7`
+
+# Always enable colored `grep` output
+export GREP_OPTIONS="--color=auto"
