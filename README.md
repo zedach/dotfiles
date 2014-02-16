@@ -1,4 +1,4 @@
-# Mourad's dotfiles 
+# Mourad's dotfiles
 
 (Thanks to Mathias Bynens for his awesome [dotfiles](https://github.com/mathiasbynens/dotfiles).)
 
@@ -27,16 +27,6 @@ Alternatively, to update while avoiding the confirmation prompt:
 ```bash
 set -- -f; source bootstrap.sh
 ```
-
-### Git-free install
-
-To install these dotfiles without Git:
-
-```bash
-cd; curl -#L https://bitbucket.org/ze_dach/dotfiles/get/master.tar.gz | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE-MIT.txt}
-```
-
-To update later on, just run that command again.
 
 ### Specify the `$PATH`
 
