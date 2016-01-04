@@ -1,0 +1,2 @@
+# https://github.com/juven/maven-bash-completion
+. ~/.maven_bash_completion.bash
