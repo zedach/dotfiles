@@ -5,3 +5,7 @@ export GREP_OPTIONS="--color=auto"
 
 # Avoid OutOfMemoryError when compiling Scala classes
 export SBT_OPTS=-XX:MaxPermSize=256M
+
+export JBOSS_HOME=/usr/local/opt/wildfly-as/libexec
+
+export PATH=${PATH}:${JBOSS_HOME}/bin
