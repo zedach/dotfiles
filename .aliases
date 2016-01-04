@@ -1,6 +1,6 @@
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-  colorflag="--color"
+  colorflag="-G"
 else # OS X `ls`
   colorflag="-G"
 fi
@@ -141,3 +141,5 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
+# Reformat Json on cli
+alias ppj="python -mjson.tool | pygmentize -l javascript"
