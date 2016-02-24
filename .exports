@@ -9,3 +9,7 @@ export SBT_OPTS=-XX:MaxPermSize=256M
 export JBOSS_HOME=/usr/local/opt/wildfly-as/libexec
 
 export PATH=${PATH}:${JBOSS_HOME}/bin
+
+export M2_HOME=/usr/local/Cellar/maven/3.3.9/libexec/
+
+export HOMEBREW_GITHUB_API_TOKEN=***REMOVED***
