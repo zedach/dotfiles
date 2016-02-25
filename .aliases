@@ -30,6 +30,7 @@ alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
+alias p="cd ~/Projects/til"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -143,3 +144,6 @@ alias reload="exec $SHELL -l"
 
 # Reformat Json on cli
 alias ppj="python -mjson.tool | pygmentize -l javascript"
+
+# Start quickstart docker
+alias docker-quickstart="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
