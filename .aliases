@@ -147,3 +147,5 @@ alias ppj="python -mjson.tool | pygmentize -l javascript"
 
 # Start quickstart docker
 alias docker-quickstart="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
+
+alias bluesh="/usr/local/restart_bluetooth.sh"
