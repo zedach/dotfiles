@@ -19,4 +19,11 @@ function removeFromPath() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
 
+# ebiz | internet
+function setHosts() {
+				sudo cp -f "/etc/hosts-${@}" /etc/hosts
+}
+
+
+#setHosts internet
 setjdk 1.8
