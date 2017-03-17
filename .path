@@ -1,5 +1,1 @@
-PATH=/usr/local/bin:$PATH
-PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
-PATH=/Library/Python/2.7/site-packages/svnplot:$PATH
-PATH=/usr/local/Cellar/parallel/20160922/bin:$PATH
-export PATH
+export PATH="/usr/local/bin:$PATH"
