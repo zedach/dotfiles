@@ -249,4 +249,3 @@ _mvn()
 
 complete -o default -F _mvn -o nospace mvn
 complete -o default -F _mvn -o nospace mvnDebug
-
