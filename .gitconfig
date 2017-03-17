@@ -35,8 +35,9 @@
 	fm = "!f() { git log --pretty=format:'%C(yellow)%h	%Cblue%ad	%Creset%s%Cgreen	[%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 	# Remove branches that have already been merged with master
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+	staaash = stash --all
 [core]
- excludesfile = ~/.gitignore
+	excludesfile = /Users/dach/.gitignore
  # Make `git rebase` safer on OS X
  # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
  trustctime = false
@@ -63,3 +64,24 @@
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
+[user]
+	name = Mourad
+	email = mourad.dachraoui@ebiznext.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[credential]
+	helper = osxkeychain
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
+[push]
+	default = simple
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
