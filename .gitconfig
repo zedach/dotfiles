@@ -100,6 +100,10 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
+[pager]
+			diff = diff-so-fancy | less --tabs=1,5 -RFX
+			show = diff-so-fancy | less --tabs=1,5 -RFX
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -118,6 +122,13 @@
 	frag = magenta bold # line info
 	old = red # deletions
 	new = green # additions
+
+[color "diff-highlight"]
+
+	oldNormal = red bold
+	oldHighlight = red bold 52# line info
+	newNormal = green bold # deletions
+	newHighlight = green bold 22# additions
 
 [color "status"]
 
