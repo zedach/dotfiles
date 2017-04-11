@@ -103,7 +103,7 @@ installcask docker
 installcask dropbox
 installcask flux
 installcask franz
-installcask freesmug-chromium
+installcask eloston-chromium
 installcask imagealpha
 installcask imageoptim
 installcask iterm2
@@ -186,6 +186,7 @@ brew install tree
 brew install watch
 
 npm install -g tldr
+npm install -g aglio
 
 # hacks for scala
 # http://scalacookbook.blogspot.fr/2012/09/scala-for-intellij.html
