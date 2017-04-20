@@ -187,6 +187,7 @@ brew install watch
 
 npm install -g tldr
 npm install -g aglio
+npm install -g hercule
 
 # hacks for scala
 # http://scalacookbook.blogspot.fr/2012/09/scala-for-intellij.html
