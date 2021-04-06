@@ -1,1 +1,24 @@
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
+
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+
+if command -v pyenv 1>/dev/null 2>&1; then
+ eval "$(pyenv init -)"
+fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/dach/Projects/formations/gcp/cookbook/google-cloud-sdk/path.bash.inc' ]; then . '/Users/dach/Projects/formations/gcp/cookbook/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/dach/Projects/formations/gcp/cookbook/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/dach/Projects/formations/gcp/cookbook/google-cloud-sdk/completion.bash.inc'; fi
+
+##
+# Your previous /Users/dach/.bash_profile file was backed up as /Users/dach/.bash_profile.macports-saved_2019-12-12_at_10:48:51
+##
+
+# MacPorts Installer addition on 2019-12-12_at_10:48:51: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
