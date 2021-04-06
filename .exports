@@ -33,3 +33,5 @@ export M2_HOME=/usr/local/Cellar/maven/3.3.9/libexec/
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
+
+export SBT_OPTS="-Xmx8g -Xss16M -XX:+CMSClassUnloadingEnabled -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=4 -XX:ConcGCThreads=4 -XX:InitiatingHeapOccupancyPercent=50"
