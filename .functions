@@ -259,4 +259,4 @@ function tre() {
 }
 
 #setHosts internet
-setjdk 1.8
+# setjdk 1.8
