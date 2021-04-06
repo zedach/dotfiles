@@ -57,7 +57,7 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 
 # Google Chrome
-# alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -163,3 +163,11 @@ alias reload="exec $SHELL -l"
 alias tldr="tldr -t ocean"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# ssh to iris data with socks proxy on port
+alias goirisdata='function _go-irisdata() { ssh -4 -D $1 dev06.iris-data.cabestan.com;}; _go-irisdata'
+
+# ssh to iris data via ebiznext with socks proxy on port
+alias goirisdata-via-ebiz='function _go-irisdata-via-ebiz() { ssh -4 -L ${1}:localhost:${1} dach@app200.cluster1 -t ssh -4 -D $1 dev06.iris-data.cabestan.com;}; _go-irisdata-via-ebiz'
+
+alias resart_audio="sudo kill `ps -ax | grep 'coreaudiod' | grep 'sbin' |awk '{print $1}'`"
