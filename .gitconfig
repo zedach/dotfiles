@@ -76,6 +76,8 @@
 		fi \
 	}; f"
 
+  mr = "!sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -"
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
@@ -99,6 +101,7 @@
 	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
+	autocrlf = input
 
 [pager]
 			diff = diff-so-fancy | less --tabs=1,5 -RFX
@@ -191,3 +194,23 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	name = Mourad DACHRAOUI
+	email = mourad.dachraoui@ebiznext.com
+[url "https://github.com/"]
+	insteadOf = git@github.com:
+[url "https://"]
+	insteadOf = git://
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[credential "https://source.developers.google.com"]
+	helper = gcloud.sh
+[pull]
+	rebase = true
+[remote "origin"]
+					fetch = +refs/merge-requests/*:refs/remotes/origin/merge-requests/*
+
